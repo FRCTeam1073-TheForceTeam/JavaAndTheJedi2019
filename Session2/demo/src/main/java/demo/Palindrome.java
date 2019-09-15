@@ -1,37 +1,33 @@
-package main.java.demo;
+package demo;
 
 import java.util.*;
+import java.util.stream.Stream;
+import java.lang.String;
 class Palindrome{
 
-    public void Palindrome(){
+    public Palindrome(){
 
     }
-    public Boolean IsPalindrome(){
-        Scanner userInput = new Scanner(System.in);
+    public String UserInput(){
+        Scanner userInput = new Scanner(System.in);//creates scanner object used for input
         System.out.println("enter string");
-        String Palindrome = userInput.nextLine();
-        char[] inputArray = Palindrome.toCharArray();
-        int len = (inputArray.length)-1;
-        //ArrayList<Character> outputArray=new ArrayList<Character>();
-        char[] outputArray;
-        for(int i = len; i == 0; i--){
-            int reverseNum = len - i;
-            outputArray.add(inputArray[reverseNum]);
-        }
-        String newPalindrome = new String(outputArray);
-        
-        if(Palindrome == newPalindrome){
-            Boolean isPailndrome = true;
-            return isPalindrome;
-        }
-        else{
-            Boolean isPalindrome = false;
-            return isPalindrome;
-        }
-        
+        String Palindrome = userInput.nextLine();//prompts user
+        return Palindrome;
     }
-    public static void main(String[] args){
-        Boolean True_False = IsPailndrome();
-        System.out.println(True_False);
+    public Boolean IsPalindrome(String word){
+        System.out.println(word);
+        String currentChar;
+        char input[] = word.toCharArray();
+        int len = input.length;
+        char[] output = new char[len];
+        
+        for(int j = len-1, i = 0; j >= 0; j--, i++){
+             output[i] = input[j];
+        }
+        String newWord = new String(output);
+        System.out.println(newWord);
+        Boolean isPalindrome = word.equals(newWord);
+        return isPalindrome;
+        
     }
 }

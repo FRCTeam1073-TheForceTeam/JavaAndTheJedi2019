@@ -9,6 +9,9 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        Palindrome test = new Palindrome();
+        String word = test.UserInput();
+        Boolean True_False = test.IsPalindrome(word);
+        System.out.println(True_False);
     }
 }
