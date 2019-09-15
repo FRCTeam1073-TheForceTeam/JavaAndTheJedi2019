@@ -21,13 +21,13 @@ class Palindrome{
         int len = input.length;
         char[] output = new char[len];
         
-        for(int j = len-1, i = 0; j >= 0; j--, i++){
+        for(int j = len-1, i = 0; j > 0; j--, i++){
              output[i] = input[j];
         }
 
         String newWord = new String(output);
         Boolean isPalindrome = word.equals(newWord);
-        
+
         return isPalindrome;
         
     }
