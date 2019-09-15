@@ -32,3 +32,8 @@ application {
     // Define the main class for the application
     mainClassName = 'demo.App'
 }
+
+run {
+    standardInput = System.in
+}
+

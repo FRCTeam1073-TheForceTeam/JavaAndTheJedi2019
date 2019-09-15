@@ -4,14 +4,17 @@
 package demo;
 
 public class App {
-    public String getGreeting() {
-        return "Hello world.";
-    }
-
     public static void main(String[] args) {
+
+        System.out.println("Welcome to 'Is Palindrome'!");
+        
+        // gather inputr from user and determine if if is 
+        // a palindrome or not. 
         Palindrome test = new Palindrome();
         String word = test.UserInput();
         Boolean True_False = test.IsPalindrome(word);
+
+        //print result to screen
         System.out.println(True_False);
     }
 }
