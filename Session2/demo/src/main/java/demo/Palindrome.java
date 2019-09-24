@@ -11,7 +11,7 @@ class Palindrome{
     public String UserInput(){
         Scanner userInput = new Scanner(System.in);//creates scanner object used for input
         System.out.println("enter string");
-        String Palindrome = userInput.nextLine();//prompts user
+        String Palindrome = userInput.nextLine();//prompts user for a word
         return Palindrome;
     }
     public Boolean IsPalindrome(String word){
