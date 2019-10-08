@@ -3,6 +3,7 @@ package demo;
 import java.util.*;
 import java.util.stream.Stream;
 import java.lang.String;
+
 class Palindrome{
 
     public Palindrome(){
@@ -21,7 +22,7 @@ class Palindrome{
         int len = input.length;
         char[] output = new char[len];
         
-        for(int j = len-1, i = 0; j > 0; j--, i++){
+        for(int j = len-1, i = 0; j >= 0; j--, i++){
              output[i] = input[j];
         }
 

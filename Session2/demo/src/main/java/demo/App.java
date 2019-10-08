@@ -6,7 +6,7 @@ package demo;
 public class App {
     public static void main(String[] args) {
 
-        System.out.println("Welcome to 'Is Palindrome'!);
+        System.out.println("Welcome to 'Is Palindrome'!");
         
         // gather inputr from user and determine if if is 
         // a palindrome or not. 
