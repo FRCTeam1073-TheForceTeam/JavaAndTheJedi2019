@@ -10,4 +10,11 @@ public class AppTest {
     @Test public void testAppHasAGreeting() {
         App classUnderTest = new App();
     }
+
+    @Test public void testIsPalindrome(){
+
+        Palindrome test = new Palindrome();
+        assertEquals(test.IsPalindrome("jon"),false);
+        assertEquals(test.IsPalindrome("racecar"),true);
+    }
 }
